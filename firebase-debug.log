@@ -1,0 +1,86 @@
+[debug] [2023-05-06T20:45:05.153Z] ----------------------------------------------------------------------
+[debug] [2023-05-06T20:45:05.156Z] Command:       E:\egyetemi orak\nodejs_npm\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-06T20:45:05.157Z] CLI Version:   11.29.1
+[debug] [2023-05-06T20:45:05.157Z] Platform:      win32
+[debug] [2023-05-06T20:45:05.157Z] Node Version:  v18.15.0
+[debug] [2023-05-06T20:45:05.159Z] Time:          Sat May 06 2023 22:45:05 GMT+0200 (közép-európai nyári idő)
+[debug] [2023-05-06T20:45:05.159Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-06T20:45:05.270Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-06T20:45:05.271Z] > authorizing via signed-in user (ban.jani2011@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\EgyetemiMappa\6Felev\WebkerGyak\12 - Firebase Hosting
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-06T20:45:24.974Z] Using project from CLI flag: webfejl-2022
+[debug] [2023-05-06T20:45:24.977Z] > refreshing access token with scopes: []
+[debug] [2023-05-06T20:45:24.979Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-06T20:45:24.980Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-06T20:45:25.191Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-06T20:45:25.191Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-06T20:45:25.211Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webfejl-2022 [none]
+[debug] [2023-05-06T20:45:25.557Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webfejl-2022 403
+[debug] [2023-05-06T20:45:25.557Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webfejl-2022 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-06T20:45:25.558Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-06T20:45:25.699Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project webfejl-2022. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-07T21:29:47.887Z] ----------------------------------------------------------------------
+[debug] [2023-05-07T21:29:47.893Z] Command:       E:\egyetemi orak\nodejs_npm\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-07T21:29:47.894Z] CLI Version:   11.29.1
+[debug] [2023-05-07T21:29:47.895Z] Platform:      win32
+[debug] [2023-05-07T21:29:47.896Z] Node Version:  v18.15.0
+[debug] [2023-05-07T21:29:47.899Z] Time:          Sun May 07 2023 23:29:47 GMT+0200 (közép-európai nyári idő)
+[debug] [2023-05-07T21:29:47.900Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-07T21:29:47.925Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-05-07T21:29:48.226Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-07T21:29:48.227Z] > authorizing via signed-in user (ban.jani2011@gmail.com)
+[debug] [2023-05-07T21:29:48.227Z] [iam] checking project webfejl-2022 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-07T21:29:48.230Z] > refreshing access token with scopes: []
+[debug] [2023-05-07T21:29:48.232Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-07T21:29:48.232Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-07T21:29:48.476Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-07T21:29:48.476Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-07T21:29:48.509Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfejl-2022:testIamPermissions [none]
+[debug] [2023-05-07T21:29:48.509Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfejl-2022:testIamPermissions x-goog-quota-user=projects/webfejl-2022
+[debug] [2023-05-07T21:29:48.510Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfejl-2022:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-07T21:29:48.541Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-05-07T21:29:48.541Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-05-07T21:29:49.451Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfejl-2022:testIamPermissions 200
+[debug] [2023-05-07T21:29:49.451Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webfejl-2022:testIamPermissions {}
+[debug] [2023-05-07T21:29:49.452Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project webfejl-2022:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-05-07T21:29:49.453Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webfejl-2022 [none]
+[debug] [2023-05-07T21:29:49.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webfejl-2022 403
+[debug] [2023-05-07T21:29:49.777Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webfejl-2022 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-07T21:29:49.778Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-07T21:29:49.925Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project webfejl-2022. Please make sure the project exists and your account has permission to access it.
